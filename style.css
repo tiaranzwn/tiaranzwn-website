@@ -1,0 +1,308 @@
+/* Halaman pembuka animasi */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: italic;
+}
+#hero {
+  	height: 100vh;
+  	background-color: #DBAFC1;
+  	text-align: center;
+	background: #DBAFC1;
+	color: #FFFFFF;
+}
+.display0{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.opening {
+	font-size: 3.5rem;
+	color: #fff;
+	animation: fadeIn 2.5s ease-in;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(-20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+#navbar.navbar{
+	color: #B34974;
+	
+}
+section{
+	padding: 100px 0;
+}
+
+#home, #about, #certificate, #project, #contact{
+	padding: 80px 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.home {
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.home .desc1 {
+	text-align: center;
+	color: #B34974;
+}
+
+.home img {
+	display: block;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid #B34974;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.home h1 {
+	text-align: center;
+	color: black;
+	margin-top: 5px;
+}
+
+.home h1 span{
+	text-align: center;
+	color: #DBAFC1;
+}
+
+.home .desc2 {
+	text-align: center;
+}
+
+.btn-custom {
+  	background-color: #B34974;
+  	color: white;
+  	margin: 5px;
+  	border: none;
+  	padding: 10px 20px;
+  	border-radius: 25px;
+  	transition: 0.3s ease;
+	align-items: center;
+}
+
+.btn-custom:hover {
+  	background-color: #DBAFC1;
+  	font-style: oblique;
+	align-content: center;
+}
+
+.about {
+	width: 90%;
+    height: auto;
+}
+
+.about .heading {
+	font-size: 50px;
+	text-align: center;
+	color: #B34974;
+	padding: 1px;
+	margin: 2px 0;	
+}
+
+span{
+	color: black;
+}
+
+.about .row{
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	flex-wrap: wrap;
+	padding: 2px 0;
+	padding-bottom: 3px;
+	margin-top: 10px;
+}
+
+.about .row .content{
+	padding: 2px;
+	text-align: justify;
+	margin: 5px 40px 5px 40px;
+}
+
+.about .content h3{
+	font-size: 23px;
+	margin-bottom: 6px;
+	color: #B34974;
+}
+
+.about .content h4{
+	font-size:19px;
+	margin-bottom: 10px;
+	color: #DBAFC1;
+}
+	
+.certificate{
+	width: 100%;
+    height: auto;
+	text-align: center;
+	color: #B34974;
+}
+
+.certificate .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50.5px;
+	margin: 10 80px;
+}
+.certificate .box-container .box{
+	flex: 1 1 30px;
+	margin-top: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+.certificate .box-container .box .image{
+	position: relative;
+	text-align: center;
+	padding: 20px 20px 5px;
+	overflow: hidden;
+}
+.certificate .box-container .box .image img{
+	height: 280px;
+	border-radius: 10px;
+}
+
+.certificate .box-container .box:hover .image img{
+	transform: scale(1.1);
+	border-radius: 10px;
+}
+
+.certificate .content h3 {
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.project{
+	padding: 5 0px;
+	text-align: center;
+}
+
+.project h1{
+	color: #B34974;
+}
+
+.project h2{
+	color: #DBAFC1;
+}
+
+.project .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50.5px;
+	margin: 10 80px;
+}
+.project .box-container .box{
+	flex: 1 1 30px;
+	margin-top: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+.project .box-container .box .image{
+	position: relative;
+	text-align: center;
+	padding-top: 2px;
+	overflow: hidden;
+}
+.project .box-container .box .image img{
+	height: 300px;
+	border-radius: 10px;
+}
+.project .box-container .box:hover .image img{
+	transform: scale(1.1);
+}
+
+.project .sub {
+  	position: relative;
+  	overflow: hidden;
+	margin-top: 60px;
+}
+
+.project .sub h2{
+	text-align: left;
+	margin-left: 30px;
+}
+
+.project-track {
+  	display: flex;
+  	overflow-x: auto;
+  	scroll-behavior: smooth;
+  	gap: 1rem;
+  	padding: 1rem 0;
+}
+
+.project-card {
+  min-width: 150px;
+  flex-shrink: 0;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0.3px 2.5px gray;
+}
+.project-card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.project-card video {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 10px;
+}
+
+.slide-btn.left {
+  left: 0;
+}
+
+.slide-btn.right {
+  right: 0;
+}
+
+.contact {
+	margin-top: 80px;
+}
+
+.contact h1{
+	text-align: center;
+	color: #B34974;
+}
+
+.contact .form{
+	margin-bottom: 3px;
+	width: 100%;
+	color: #B34974;
+}
+
+footer a {
+  	transition: transform 0.3s ease;
+	color: #DBAFC1;
+}
+
+footer a:hover {
+  	transform: scale(1.2);
+}
